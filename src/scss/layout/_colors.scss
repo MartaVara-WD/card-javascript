@@ -1,0 +1,83 @@
+//colores js//
+
+/*aplica a const styleRed*/
+
+.style-red-light {
+  border: 2px solid #e95626;
+}
+
+.style-red-dark {
+  color: #420101;
+}
+
+.style-red-medium {
+  background-color: #bd1010;
+}
+
+.style-red-background {
+  background-color: #7e4444;
+  background: {
+    image: url(../images/verderosa.svg);
+    repeat: no-repeat;
+    height: 100%;
+    position: center;
+  }
+}
+
+.style-red-background-icon {
+  background-color: #e95626;
+}
+
+/*aplica a const styleYellow*/
+
+.style-yellow-light {
+  border: 2px solid #a0c0cf;
+}
+
+.style-yellow-dark {
+  color: #3e5b65;
+}
+
+.style-yellow-medium {
+  background-color: $color-medium-yellow;
+}
+
+.style-yellow-background {
+  background-color: #a0c0cf;
+  background: {
+    image: url(../images/azul.svg);
+    repeat: no-repeat;
+    height: 100%;
+    position: center;
+  }
+}
+
+.style-yellow-background-icon {
+  background-color: #a0c0cf;
+}
+
+/*aplica a const styleBlue*/
+
+.style-blue-light {
+  border: solid 2px $color-primary-light;
+}
+
+.style-blue-dark {
+  color: $color-primary-dark;
+}
+
+.style-blue-medium {
+  background-color: $color-primary-medium;
+}
+.style-blue-background {
+  background-color: rgb(119, 184, 201);
+  background: {
+    image: url(../images/moon.svg);
+    repeat: no-repeat;
+    height: 100%;
+    position: center;
+  }
+}
+.style-blue-background-icon {
+  background-color: $color-primary-light;
+}

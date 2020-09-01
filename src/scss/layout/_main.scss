@@ -1,0 +1,156 @@
+/*Fondo general main*/
+
+.page__main {
+  min-height: 800px;
+  background-color: $color-back;
+  margin-bottom: 50px;
+  @include tablet {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid $color-form-medium;
+  }
+}
+
+.imagen {
+  width: 100%;
+  height: 457px;
+  background-color: $color-yellow;
+  // background: linear-gradient(
+  //   150deg,
+  //   $color-medium-yellow,
+  //   rgb(74, 40, 196),
+  //   $color-background
+  // );
+  background-size: 400% 300%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: BgGrandient 10s ease infinite;
+  @include tablet {
+    order: 2;
+    width: 329px;
+    margin: 20px 0;
+    height: auto;
+    border-radius: 10px;
+  }
+}
+@keyframes BgGrandient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.button__reset {
+  padding-left: 10px;
+  padding-right: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 75px;
+  height: 30px;
+  border: solid 2px $color-back;
+  border-radius: 15px;
+  background-color: white;
+  outline: none;
+  &:hover {
+    background-color: white;
+  }
+}
+.button__reset--word {
+  font-family: $font-primary;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.img-button {
+  width: 11px;
+}
+
+.card {
+  margin-top: 20px;
+  width: 240px;
+  height: 329px;
+  background-color: white;
+  box-shadow: 2px 2px 10px #666;
+  &__top {
+    padding-top: 23px;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    flex-direction: row;
+    &__square-color {
+      width: 5px;
+      height: 42px;
+      margin-right: 15px;
+      background-color: $color-primary-medium;
+    }
+    &__title {
+      height: 42px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      &__name {
+        font-size: 18px;
+        font-family: $font-secondary;
+        text-transform: capitalize;
+        font-weight: 700;
+        color: $color-primary-darks;
+      }
+      &__role {
+        font-size: 16px;
+        font-family: $font-secondary;
+        font-weight: 400;
+      }
+    }
+  }
+}
+
+.card__photo {
+  height: 200px;
+  background-size: cover;
+  background-color: rgb(119, 184, 201);
+  background: {
+    image: url(../images/moon.svg);
+    repeat: no-repeat;
+    height: 100%;
+    position: center;
+  }
+}
+.card__bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 54px;
+  &__list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    width: 100%;
+    padding-left: 20px;
+    &__li {
+      border: solid 2px $color-primary-light;
+      border-radius: 100%;
+      display: block;
+      text-align: center;
+      padding-top: 4px;
+      padding-right: 1px;
+      margin-right: 9px;
+      height: 32px;
+      width: 32px;
+      color: $color-primary-darks;
+    }
+    & .icon {
+      padding-left: 1px;
+      font-size: 20px;
+    }
+  }
+}

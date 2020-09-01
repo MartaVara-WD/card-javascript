@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Awesome profile-cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"
+    SameSite="None" />
+  <link rel="stylesheet" href="./assets/css/main.css" />
+
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;700&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <header class="header__card">
+    <div class="header__card__logo">
+      <a href="./index.html">
+        <img
+          src="./assets/images/logo-awesome-profile-cards.png"
+          title="Ir a la Home"
+          alt="Awesome Profile Cards Logo"
+        />
+      </a>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="imagen">
+      <div>
+        <button href="#" class="button__reset js-reset-button">
+          <img class="img-button" src="./assets/images/basura.svg" alt="" />
+          <p class="button__reset--word">reset</p>
+        </button>
+
+        <div class="card">
+          <div class="card__top">
+            <div class="js-square card__top__square-color"></div>
+            <div class="card__top__title">
+              <div class="js-name-print card__top__title__name">
+                nombre apellido
+              </div>
+              <div class="js-role card__top__title__role">Front-end developer</div>
+            </div>
+          </div>
+          <div class="card__photo js-background js__profile-image" id="photo"></div>
+          <div class="card__bottom">
+            <ul class="card__bottom__list">
+              <li class="card__bottom__list__li js-border js-background-phone">
+                <a href="" target="_blank" class="js-phone-icon">
+                  <i class="js-icon icon fas fa-mobile-alt"></i>
+                </a>
+              </li>
+              <li class="js-border js-background-email card__bottom__list__li">
+                <a href="mailto:" target="_blank" class="js-email-icon"
+                  ><i class="js-icon icon far fa-envelope"></i>
+                </a>
+              </li>
+              <li class="js-border js-background-linkedin card__bottom__list__li">
+                <a
+                  href=""
+                  target="_blank"
+                  class="js-linkedin-email js-linkedin-print"
+                >
+                  <i class="js-icon icon fab fa-linkedin-in"></i>
+                </a>
+              </li>
+              <li class="js-border js-background-github card__bottom__list__li">
+                <a href="" target="_blank" class="js-github-print">
+                  <i class="js-icon icon fab fa-github-alt"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="form">
+      <div class="wrapper">
+        <form class="js-form" action="" method="POST">
+          <section class="form__design">
+            <h2 class="form__design__title">
+              <i class="far fa-object-ungroup icon"></i>
+              diseña
+              <div class="click">
+                <button><i class="fas fa-moon moonicondown"></i></button>
+                <button><i class="fas fa-moon hidden mooniconup"></i></button>
+              </div>
+            </h2>
+            <div class="colors-container">
+              <span class="form__design__subtitle">colores</span>
+              <div class="styles">
+                <div class="form__design__style1">
+                  <label class="style-blue">
+                    <div class="option">
+                      <input
+                        id="style1"
+                        type="radio"
+                        value="green"
+                        name="style"
+                        class="js-input-blue"
+                        required
+                        checked
+                      />
+                    </div>
+                    <div class="colors">
+                      <div class="square one"></div>
+                      <div class="square two"></div>
+                      <div class="square three"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="form__design__style2">
+                  <label class="style-red">
+                    <div class="option">
+                      <input
+                        id="style2"
+                        type="radio"
+                        value="red"
+                        name="style"
+                        class="js-input-red"
+                        required
+                      />
+                    </div>
+                    <div class="colors">
+                      <div class="square one"></div>
+                      <div class="square two"></div>
+                      <div class="square three"></div>
+                    </div>
+                  </label>
+                </div>
+                <div class="form__design__style3">
+                  <label class="style-yellow">
+                    <div class="option">
+                      <input
+                        id="style3"
+                        type="radio"
+                        value="colorMix"
+                        name="style"
+                        class="js-input-yellow"
+                        required
+                      />
+                    </div>
+                    <div class="colors">
+                      <div class="square one"></div>
+                      <div class="square two"></div>
+                      <div class="square three"></div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="form__section">
+            <h2 class="form__section__title">
+              <i class="far fa-keyboard"></i>
+              rellena
+              <div class="click2">
+                <button><i class="fas fa-moon moonicondown2"></i></button>
+                <button>
+                  <i class="fas fa-moon hidden mooniconup2"></i>
+                </button>
+              </div>
+            </h2>
+            <div class="form__section__signup hidden">
+              <label for="name"> Nombre Completo</label>
+              <span class="asterisk">*</span>
+              <input
+                class="js-input js-name"
+                placeholder="Ej: Merche Lios"
+                id="name"
+                type="text"
+                name="name"
+                required
+              />
+              <label for="job">Puesto</label>
+              <span class="asterisk">*</span>
+              <input
+                class="js-input js-job"
+                placeholder="Ej: Front-end"
+                id="job"
+                type="text"
+                name="job"
+                required
+              />
+              <label for="image">Imagen de perfil</label>
+              <span class="asterisk">*</span>
+              <div class="image-wrapper">
+                <div class="action">
+                  <button
+                    class="btn-img action__upload-btn js__profile-trigger"
+                    id="photo"
+                    href="#"
+                  >
+                    Añadir imagen
+                  </button>
+                  <input
+                    class="action__hiddenField js__profile-upload-btn"
+                    id="image"
+                    type="file"
+                    name="image"
+                    required
+                  />
+                </div>
+                <div class="profile">
+                  <div class="profile__preview js__profile-preview"></div>
+                </div>
+              </div>
+              <label for="email">Email</label>
+              <span class="asterisk">*</span>
+              <input
+                class="js-input js-email"
+                placeholder="Ej: merche@gmail.com"
+                id="email"
+                type="email"
+                name="email"
+                required
+              />
+              <label for="phone">Teléfono</label>
+              <span class="asterisk">*</span>
+              <input
+                class="js-input js-phone"
+                placeholder="Ej: 779744561"
+                id="phone"
+                type="number"
+                name="phone"
+                pattern="[0-9]{9,15}"
+              />
+              <label for="linkedin">Linkedin</label>
+              <span class="asterisk">*</span>
+              <input
+                class="js-input js-linkedin"
+                placeholder="Ej: @merche"
+                id="linkedin"
+                type="text"
+                name="linkedin"
+              />
+              <label for="github">Github</label>
+              <span class="asterisk">*</span>
+              <input
+                class="js-input js-github github"
+                placeholder="Ej: @merchelios"
+                id="github"
+                type="text"
+                name="github"
+              />
+            </div>
+          </section>
+          <section class="form__share">
+            <h2 class="form__share__title">
+              <i class="fa fa-share-alt icon"></i>
+              comparte
+              <div class="click3">
+                <button><i class="fas fa-moon moonicondown3"></i></button>
+                <button>
+                  <i class="fas fa-moon hidden mooniconup3"></i>
+                </button>
+              </div>
+            </h2>
+            <div class="form__share__button hidden">
+              <button
+                type="submit"
+                value="Enviar"
+                class="js-share share form__share__button__button inactive"
+              >
+                <i class="far fa-address-card"></i>
+                crear tarjeta
+              </button>
+            </div>
+            <div class="js-input js-twitter twitter hidden">
+              <p class="js-twiter-paragraph twitter-paragraph">
+                ✨ Aquí tienes tu tarjeta de visita Sailor Code ✨
+              </p>
+              <a
+                href="https://twitter.com/login"
+                class="js-twitter-url twitter-url response"
+              >
+                https://twitter.com/login
+              </a>
+              <a
+                class="twitter-share-button"
+                href="https://twitter.com/intent/tweet"
+              >
+                <button class="js-twitter-button twitter-button">
+                  <a class="twitter-link">
+                    <i class="fab fa-twitter"></i>
+                    Compartir en twitter
+                  </a>
+                </button>
+              </a>
+            </div>
+          </section>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <small class="footer__copyright">awesome profile-cards@2020</small>
+    <a class="footer__logo" href="#" title="logo-adalab">
+      <img
+        class="footer__logo--adalab"
+        src="./assets/images/logo-adalab.png"
+        alt="logo-adalab"
+      />
+    </a>
+  </footer>
+
+  <script type="text/javascript" src="./assets/js/main.js"></script>
+</body>
+
+</html>

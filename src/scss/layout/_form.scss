@@ -1,0 +1,420 @@
+.form {
+  & .click,
+  .click2,
+  .click3 {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+  }
+  .wrapper {
+    padding: 30px 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet {
+      padding: 30px 40px;
+    }
+  }
+
+  &__design {
+    width: 320px;
+    position: relative;
+    margin-bottom: 10px;
+    &__title {
+      color: $color-light-dark;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: rem(18);
+      .icon {
+        width: 21px;
+        height: 18px;
+        color: $color-accenture;
+      }
+      .moonicondown {
+        color: $color-medium-yellow;
+        transform: rotate(110deg);
+
+        &:hover {
+          animation: rotate;
+          animation-duration: 1.5s;
+          animation-iteration-count: 1;
+          animation-timing-function: linear;
+        }
+        @keyframes rotate {
+          from {
+            transform: rotate(110deg);
+          }
+          to {
+            transform: rotate(460deg);
+          }
+        }
+      }
+      .mooniconup {
+        color: $color-medium-yellow;
+        transform: rotate(-70deg);
+        &:hover {
+          animation: rotation;
+          animation-duration: 1.5s;
+          animation-iteration-count: 1;
+          animation-timing-function: linear;
+        }
+        @keyframes rotation {
+          from {
+            transform: rotate(-70deg);
+          }
+          to {
+            transform: rotate(300deg);
+          }
+        }
+      }
+    }
+    .colors-container {
+      margin-top: 22px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &__subtitle {
+      color: $color-light-dark;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-size: rem(14);
+    }
+
+    .option {
+      margin-right: 10px;
+    }
+
+    &__style1 {
+      margin-bottom: 20px;
+      border: 1px solid red($color: #000000);
+      .style-blue {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .colors {
+        display: flex;
+        & .square {
+          width: 30px;
+          height: 25px;
+          display: inline-block;
+        }
+        .one {
+          background-color: $color-primary-dark;
+        }
+        .two {
+          background-color: $color-primary-medium;
+        }
+        .three {
+          background-color: $color-primary-light;
+        }
+      }
+    }
+
+    &__style2 {
+      margin-bottom: 20px;
+
+      & .style-red {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .colors {
+        display: flex;
+        & .square {
+          width: 30px;
+          height: 25px;
+          display: inline-block;
+        }
+        .one {
+          background-color: #420101;
+        }
+        .two {
+          background-color: #bd1010;
+        }
+        .three {
+          background-color: #e95626;
+        }
+      }
+    }
+
+    &__style3 {
+      margin-bottom: 10px;
+
+      & .style-yellow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+      .colors {
+        display: flex;
+        & .square {
+          width: 30px;
+          height: 25px;
+          display: inline-block;
+        }
+        .one {
+          background-color: #3e5b65;
+        }
+        .two {
+          background-color: #eab052;
+        }
+        .three {
+          background-color: #a0c0cf;
+        }
+      }
+    }
+  }
+
+  &__section {
+    border-top: 1px solid $color-form-medium;
+    width: 320px;
+    margin: auto;
+    position: relative;
+
+    &__title {
+      margin-top: 10px;
+      color: $color-light-dark;
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: rem(18);
+      text-transform: uppercase;
+
+      .far,
+      .fa {
+        margin-bottom: 10px;
+        line-height: normal;
+        color: $color-accenture;
+      }
+    }
+    .moonicondown2 {
+      color: $color-medium-yellow;
+      transform: rotate(110deg);
+
+      &:hover {
+        animation: rotate;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(110deg);
+        }
+        to {
+          transform: rotate(460deg);
+        }
+      }
+    }
+    .mooniconup2 {
+      color: $color-medium-yellow;
+      transform: rotate(-70deg);
+      &:hover {
+        animation: rotation;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(-70deg);
+        }
+        to {
+          transform: rotate(300deg);
+        }
+      }
+    }
+    &__signup {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: flex-start;
+      text-align: left;
+
+      label {
+        width: 100%;
+        height: 45px;
+        padding-top: 15px;
+        margin-top: 10px;
+        text-align: left;
+        font-family: $font-primary;
+        color: $color-light;
+      }
+      .asterisk {
+        color: $color-accenture;
+      }
+      input {
+        margin-top: 7px;
+        margin-bottom: 10px;
+        width: 100%;
+        height: 45px;
+        padding: 10px;
+        text-align: left;
+        border: 0px solid $color-yellow;
+        border-bottom: 1px solid $color-light;
+        background-color: rgba(255, 255, 255, 0);
+        font-family: $font-primary;
+        font-size: 14px;
+        color: $color-light-dark;
+        // &:invalid {
+        //   border: red 1px solid;
+        // }
+      }
+
+      .btn-image {
+        color: $color-light;
+        font-size: rem(14);
+        width: 140px;
+        height: 30px;
+        border-radius: 6px;
+        text-align: center;
+        background-color: $color-accenture;
+        font-family: $font-primary;
+      }
+      .github {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  &__share {
+    margin-bottom: 60px;
+    width: 320px;
+    position: relative;
+    border-top: 1px solid $color-form-medium;
+
+    &__title {
+      margin-top: 10px;
+      color: $color-light-dark;
+      text-transform: uppercase;
+      font-family: $font-primary;
+      font-weight: 600;
+      font-size: rem(18);
+      .icon {
+        width: 21px;
+        height: 18px;
+        color: $color-accenture;
+      }
+    }
+    .moonicondown3 {
+      color: $color-medium-yellow;
+      transform: rotate(110deg);
+
+      &:hover {
+        animation: rotate;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+      }
+      @keyframes rotate {
+        from {
+          transform: rotate(110deg);
+        }
+        to {
+          transform: rotate(460deg);
+        }
+      }
+    }
+    .mooniconup3 {
+      color: $color-medium-yellow;
+      transform: rotate(-70deg);
+      &:hover {
+        animation: rotation;
+        animation-duration: 1.5s;
+        animation-iteration-count: 1;
+        animation-timing-function: linear;
+      }
+      @keyframes rotation {
+        from {
+          transform: rotate(-70deg);
+        }
+        to {
+          transform: rotate(300deg);
+        }
+      }
+    }
+    &__button {
+      &__button {
+        background-color: $color-grey-button;
+        margin: 60px auto auto 60px;
+        width: 199px;
+        height: 50px;
+        border-radius: 12px;
+        text-align: center;
+        padding: 13px 17px;
+        font-size: rem(18);
+        color: $color-light;
+        font-family: $font-primary;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 30px;
+      }
+    }
+    .twitter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-top: 1px solid $color-form-medium;
+      border-bottom: 1px solid $color-form-medium;
+      & .twitter-paragraph {
+        margin-top: 15px;
+        text-align: center;
+        font-size: rem(18);
+        color: $color-grey;
+        font-family: $font-primary;
+        font-weight: 600;
+        margin-top: 20px;
+      }
+      & .twitter-url {
+        text-align: center;
+        color: $color-accenture;
+        font-family: $font-primary;
+        font-weight: 600;
+        font-size: rem(12);
+        margin: 5px 0 13px 0;
+      }
+      & .twitter-button {
+        background-color: $color-twitter;
+        color: $color-light;
+        width: 181px;
+        height: 30px;
+        border-radius: 5px;
+        font-size: rem(14);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        &:hover {
+          background-color: $color-accenture;
+          //cursor: pointer;
+        }
+        .fa-twitter {
+          margin-right: 9.5px;
+          width: 18px;
+          height: 18px;
+          padding-top: 1px;
+        }
+      }
+    }
+  }
+  //Display JS arrows//
+  .hidden {
+    display: none;
+  }
+
+  .active {
+    background-color: $color-accenture;
+    &:active {
+      transform: translateY(4px);
+    }
+    &:hover {
+      background-color: $color-medium-yellow;
+      cursor: url("../images/cursor-sailor.png"), auto;
+    }
+  }
+  .inactive {
+    background-color: $color-grey-button;
+  }
+}
